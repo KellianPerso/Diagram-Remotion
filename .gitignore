@@ -1,0 +1,17 @@
+node_modules/
+
+# Rendus (node render.mjs)
+out/
+
+# Générés par `npm install` (scripts/assets.mjs)
+public/aws/
+public/fonts/
+
+# Schémas de vos projets : seuls les exemples sont versionnés
+src/diagrams/*
+!src/diagrams/exemples/
+
+# Productions locales réalisées avec l'outil (documentation, guides, livrables)
+docs/
+livrables/
+site/

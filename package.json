@@ -1,0 +1,32 @@
+{
+  "name": "remotion-diagrams",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Schémas d'architecture animés (AWS, C4, séquences) décrits en TypeScript, rendus en PNG et MP4 avec Remotion",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "postinstall": "node scripts/assets.mjs",
+    "studio": "remotion studio src/index.ts",
+    "list": "node render.mjs --list",
+    "render": "node render.mjs",
+    "render:png": "node render.mjs --png",
+    "render:mp4": "node render.mjs --mp4",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.1.0",
+    "@remotion/bundler": "^4.0.535",
+    "@remotion/cli": "^4.0.535",
+    "@remotion/fonts": "^4.0.535",
+    "@remotion/renderer": "^4.0.535",
+    "@types/react": "^19.1.0",
+    "aws-icons": "^3.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "^4.0.535",
+    "simple-icons": "^13.21.0",
+    "typescript": "^5.6.3"
+  }
+}
